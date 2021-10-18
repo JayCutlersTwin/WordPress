@@ -1,0 +1,1 @@
+Ñma<?php exit; ?>a:1:{s:7:"content";s:84:"C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce/templates/cart/mini-cart.php";}

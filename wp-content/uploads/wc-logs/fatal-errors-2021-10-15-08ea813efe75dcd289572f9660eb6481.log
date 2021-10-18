@@ -1,0 +1,296 @@
+2021-10-15T09:21:39+00:00 CRITICAL Uncaught TypeError: array_column(): Argument #1 ($array) must be of type array, string given in C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\Transformers\ArrayColumn.php:27
+Stack trace:
+#0 C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\Transformers\ArrayColumn.php(27): array_column('', 'slug')
+#1 C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\TransformerService.php(59): Automattic\WooCommerce\Admin\RemoteInboxNotifications\Transformers\ArrayColumn->transform('', Object(stdClass), '')
+#2 C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\OptionRuleProcessor.php(45): Automattic\WooCommerce\Admin\RemoteInboxNotifications\TransformerService::apply('', Array, '')
+#3 C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\RuleEvaluator.php(62): Automattic\WooCommerce\Admin\RemoteInboxNotifications\OptionRuleProcessor->process(Object(stdClass), NULL)
+#4 C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\Features\RemoteFreeExtensions\EvaluateExtension.php(27): Automattic\WooCommerce\Admin\RemoteInboxNotifications\RuleEvaluator->evaluate(Array)
+#5 C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\Features\RemoteFreeExtensions\Init.php(48): Automattic\WooCommerce\Admin\Features\RemoteFreeExtensions\EvaluateExtension::evaluate(Object(stdClass))
+#6 C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\API\OnboardingFreeExtensions.php(75): Automattic\WooCommerce\Admin\Features\RemoteFreeExtensions\Init::get_extensions()
+#7 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api\class-wp-rest-server.php(1140): Automattic\WooCommerce\Admin\API\OnboardingFreeExtensions->get_available_extensions(Object(WP_REST_Request))
+#8 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api\class-wp-rest-server.php(987): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wc-admin/onboa...', Array, NULL)
+#9 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api\class-wp-rest-server.php(414): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#10 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api.php(370): WP_REST_Server->serve_request('/wc-admin/onboa...')
+#11 C:\xampp\htdocs\AlaskaCo\wp-includes\class-wp-hook.php(303): rest_api_loaded(Object(WP))
+#12 C:\xampp\htdocs\AlaskaCo\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#13 C:\xampp\htdocs\AlaskaCo\wp-includes\plugin.php(518): WP_Hook->do_action(Array)
+#14 C:\xampp\htdocs\AlaskaCo\wp-includes\class-wp.php(388): do_action_ref_array('parse_request', Array)
+#15 C:\xampp\htdocs\AlaskaCo\wp-includes\class-wp.php(750): WP->parse_request('')
+#16 C:\xampp\htdocs\AlaskaCo\wp-includes\functions.php(1291): WP->main('')
+#17 C:\xampp\htdocs\AlaskaCo\wp-blog-header.php(16): wp()
+#18 C:\xampp\htdocs\AlaskaCo\index.php(17): require('C:\\xampp\\htdocs...')
+#19 {main}
+  thrown in C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\Transformers\ArrayColumn.php on line 27
+
+2021-10-15T09:42:11+00:00 CRITICAL Uncaught TypeError: array_column(): Argument #1 ($array) must be of type array, string given in C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\Transformers\ArrayColumn.php:27
+Stack trace:
+#0 C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\Transformers\ArrayColumn.php(27): array_column('', 'slug')
+#1 C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\TransformerService.php(59): Automattic\WooCommerce\Admin\RemoteInboxNotifications\Transformers\ArrayColumn->transform('', Object(stdClass), '')
+#2 C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\OptionRuleProcessor.php(45): Automattic\WooCommerce\Admin\RemoteInboxNotifications\TransformerService::apply('', Array, '')
+#3 C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\RuleEvaluator.php(62): Automattic\WooCommerce\Admin\RemoteInboxNotifications\OptionRuleProcessor->process(Object(stdClass), NULL)
+#4 C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\Features\RemoteFreeExtensions\EvaluateExtension.php(27): Automattic\WooCommerce\Admin\RemoteInboxNotifications\RuleEvaluator->evaluate(Array)
+#5 C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\Features\RemoteFreeExtensions\Init.php(48): Automattic\WooCommerce\Admin\Features\RemoteFreeExtensions\EvaluateExtension::evaluate(Object(stdClass))
+#6 C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\API\OnboardingFreeExtensions.php(75): Automattic\WooCommerce\Admin\Features\RemoteFreeExtensions\Init::get_extensions()
+#7 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api\class-wp-rest-server.php(1140): Automattic\WooCommerce\Admin\API\OnboardingFreeExtensions->get_available_extensions(Object(WP_REST_Request))
+#8 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api\class-wp-rest-server.php(987): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wc-admin/onboa...', Array, NULL)
+#9 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api\class-wp-rest-server.php(414): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#10 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api.php(370): WP_REST_Server->serve_request('/wc-admin/onboa...')
+#11 C:\xampp\htdocs\AlaskaCo\wp-includes\class-wp-hook.php(303): rest_api_loaded(Object(WP))
+#12 C:\xampp\htdocs\AlaskaCo\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#13 C:\xampp\htdocs\AlaskaCo\wp-includes\plugin.php(518): WP_Hook->do_action(Array)
+#14 C:\xampp\htdocs\AlaskaCo\wp-includes\class-wp.php(388): do_action_ref_array('parse_request', Array)
+#15 C:\xampp\htdocs\AlaskaCo\wp-includes\class-wp.php(750): WP->parse_request('')
+#16 C:\xampp\htdocs\AlaskaCo\wp-includes\functions.php(1291): WP->main('')
+#17 C:\xampp\htdocs\AlaskaCo\wp-blog-header.php(16): wp()
+#18 C:\xampp\htdocs\AlaskaCo\index.php(17): require('C:\\xampp\\htdocs...')
+#19 {main}
+  thrown in C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\Transformers\ArrayColumn.php on line 27
+
+2021-10-15T10:06:28+00:00 CRITICAL Uncaught TypeError: array_column(): Argument #1 ($array) must be of type array, string given in C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\Transformers\ArrayColumn.php:27
+Stack trace:
+#0 C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\Transformers\ArrayColumn.php(27): array_column('', 'slug')
+#1 C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\TransformerService.php(59): Automattic\WooCommerce\Admin\RemoteInboxNotifications\Transformers\ArrayColumn->transform('', Object(stdClass), '')
+#2 C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\OptionRuleProcessor.php(45): Automattic\WooCommerce\Admin\RemoteInboxNotifications\TransformerService::apply('', Array, '')
+#3 C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\RuleEvaluator.php(62): Automattic\WooCommerce\Admin\RemoteInboxNotifications\OptionRuleProcessor->process(Object(stdClass), NULL)
+#4 C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\Features\RemoteFreeExtensions\EvaluateExtension.php(27): Automattic\WooCommerce\Admin\RemoteInboxNotifications\RuleEvaluator->evaluate(Array)
+#5 C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\Features\RemoteFreeExtensions\Init.php(48): Automattic\WooCommerce\Admin\Features\RemoteFreeExtensions\EvaluateExtension::evaluate(Object(stdClass))
+#6 C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\API\OnboardingFreeExtensions.php(75): Automattic\WooCommerce\Admin\Features\RemoteFreeExtensions\Init::get_extensions()
+#7 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api\class-wp-rest-server.php(1140): Automattic\WooCommerce\Admin\API\OnboardingFreeExtensions->get_available_extensions(Object(WP_REST_Request))
+#8 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api\class-wp-rest-server.php(987): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wc-admin/onboa...', Array, NULL)
+#9 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api\class-wp-rest-server.php(414): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#10 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api.php(370): WP_REST_Server->serve_request('/wc-admin/onboa...')
+#11 C:\xampp\htdocs\AlaskaCo\wp-includes\class-wp-hook.php(303): rest_api_loaded(Object(WP))
+#12 C:\xampp\htdocs\AlaskaCo\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#13 C:\xampp\htdocs\AlaskaCo\wp-includes\plugin.php(518): WP_Hook->do_action(Array)
+#14 C:\xampp\htdocs\AlaskaCo\wp-includes\class-wp.php(388): do_action_ref_array('parse_request', Array)
+#15 C:\xampp\htdocs\AlaskaCo\wp-includes\class-wp.php(750): WP->parse_request('')
+#16 C:\xampp\htdocs\AlaskaCo\wp-includes\functions.php(1291): WP->main('')
+#17 C:\xampp\htdocs\AlaskaCo\wp-blog-header.php(16): wp()
+#18 C:\xampp\htdocs\AlaskaCo\index.php(17): require('C:\\xampp\\htdocs...')
+#19 {main}
+  thrown in C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\Transformers\ArrayColumn.php on line 27
+
+2021-10-15T10:09:36+00:00 CRITICAL Uncaught TypeError: array_column(): Argument #1 ($array) must be of type array, string given in C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\Transformers\ArrayColumn.php:27
+Stack trace:
+#0 C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\Transformers\ArrayColumn.php(27): array_column('', 'slug')
+#1 C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\TransformerService.php(59): Automattic\WooCommerce\Admin\RemoteInboxNotifications\Transformers\ArrayColumn->transform('', Object(stdClass), '')
+#2 C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\OptionRuleProcessor.php(45): Automattic\WooCommerce\Admin\RemoteInboxNotifications\TransformerService::apply('', Array, '')
+#3 C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\RuleEvaluator.php(62): Automattic\WooCommerce\Admin\RemoteInboxNotifications\OptionRuleProcessor->process(Object(stdClass), NULL)
+#4 C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\Features\RemoteFreeExtensions\EvaluateExtension.php(27): Automattic\WooCommerce\Admin\RemoteInboxNotifications\RuleEvaluator->evaluate(Array)
+#5 C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\Features\RemoteFreeExtensions\Init.php(48): Automattic\WooCommerce\Admin\Features\RemoteFreeExtensions\EvaluateExtension::evaluate(Object(stdClass))
+#6 C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\API\OnboardingFreeExtensions.php(75): Automattic\WooCommerce\Admin\Features\RemoteFreeExtensions\Init::get_extensions()
+#7 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api\class-wp-rest-server.php(1140): Automattic\WooCommerce\Admin\API\OnboardingFreeExtensions->get_available_extensions(Object(WP_REST_Request))
+#8 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api\class-wp-rest-server.php(987): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wc-admin/onboa...', Array, NULL)
+#9 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api\class-wp-rest-server.php(414): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#10 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api.php(370): WP_REST_Server->serve_request('/wc-admin/onboa...')
+#11 C:\xampp\htdocs\AlaskaCo\wp-includes\class-wp-hook.php(303): rest_api_loaded(Object(WP))
+#12 C:\xampp\htdocs\AlaskaCo\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#13 C:\xampp\htdocs\AlaskaCo\wp-includes\plugin.php(518): WP_Hook->do_action(Array)
+#14 C:\xampp\htdocs\AlaskaCo\wp-includes\class-wp.php(388): do_action_ref_array('parse_request', Array)
+#15 C:\xampp\htdocs\AlaskaCo\wp-includes\class-wp.php(750): WP->parse_request('')
+#16 C:\xampp\htdocs\AlaskaCo\wp-includes\functions.php(1291): WP->main('')
+#17 C:\xampp\htdocs\AlaskaCo\wp-blog-header.php(16): wp()
+#18 C:\xampp\htdocs\AlaskaCo\index.php(17): require('C:\\xampp\\htdocs...')
+#19 {main}
+  thrown in C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\Transformers\ArrayColumn.php on line 27
+
+2021-10-15T10:56:05+00:00 CRITICAL Uncaught TypeError: array_column(): Argument #1 ($array) must be of type array, string given in C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\Transformers\ArrayColumn.php:27
+Stack trace:
+#0 C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\Transformers\ArrayColumn.php(27): array_column('', 'slug')
+#1 C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\TransformerService.php(59): Automattic\WooCommerce\Admin\RemoteInboxNotifications\Transformers\ArrayColumn->transform('', Object(stdClass), '')
+#2 C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\OptionRuleProcessor.php(45): Automattic\WooCommerce\Admin\RemoteInboxNotifications\TransformerService::apply('', Array, '')
+#3 C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\RuleEvaluator.php(62): Automattic\WooCommerce\Admin\RemoteInboxNotifications\OptionRuleProcessor->process(Object(stdClass), NULL)
+#4 C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\Features\RemoteFreeExtensions\EvaluateExtension.php(27): Automattic\WooCommerce\Admin\RemoteInboxNotifications\RuleEvaluator->evaluate(Array)
+#5 C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\Features\RemoteFreeExtensions\Init.php(48): Automattic\WooCommerce\Admin\Features\RemoteFreeExtensions\EvaluateExtension::evaluate(Object(stdClass))
+#6 C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\API\OnboardingFreeExtensions.php(75): Automattic\WooCommerce\Admin\Features\RemoteFreeExtensions\Init::get_extensions()
+#7 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api\class-wp-rest-server.php(1140): Automattic\WooCommerce\Admin\API\OnboardingFreeExtensions->get_available_extensions(Object(WP_REST_Request))
+#8 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api\class-wp-rest-server.php(987): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wc-admin/onboa...', Array, NULL)
+#9 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api\class-wp-rest-server.php(414): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#10 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api.php(370): WP_REST_Server->serve_request('/wc-admin/onboa...')
+#11 C:\xampp\htdocs\AlaskaCo\wp-includes\class-wp-hook.php(303): rest_api_loaded(Object(WP))
+#12 C:\xampp\htdocs\AlaskaCo\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#13 C:\xampp\htdocs\AlaskaCo\wp-includes\plugin.php(518): WP_Hook->do_action(Array)
+#14 C:\xampp\htdocs\AlaskaCo\wp-includes\class-wp.php(388): do_action_ref_array('parse_request', Array)
+#15 C:\xampp\htdocs\AlaskaCo\wp-includes\class-wp.php(750): WP->parse_request('')
+#16 C:\xampp\htdocs\AlaskaCo\wp-includes\functions.php(1291): WP->main('')
+#17 C:\xampp\htdocs\AlaskaCo\wp-blog-header.php(16): wp()
+#18 C:\xampp\htdocs\AlaskaCo\index.php(17): require('C:\\xampp\\htdocs...')
+#19 {main}
+  thrown in C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\Transformers\ArrayColumn.php on line 27
+
+2021-10-15T11:00:39+00:00 CRITICAL Uncaught TypeError: array_column(): Argument #1 ($array) must be of type array, string given in C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\Transformers\ArrayColumn.php:27
+Stack trace:
+#0 C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\Transformers\ArrayColumn.php(27): array_column('', 'slug')
+#1 C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\TransformerService.php(59): Automattic\WooCommerce\Admin\RemoteInboxNotifications\Transformers\ArrayColumn->transform('', Object(stdClass), '')
+#2 C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\OptionRuleProcessor.php(45): Automattic\WooCommerce\Admin\RemoteInboxNotifications\TransformerService::apply('', Array, '')
+#3 C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\RuleEvaluator.php(62): Automattic\WooCommerce\Admin\RemoteInboxNotifications\OptionRuleProcessor->process(Object(stdClass), NULL)
+#4 C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\Features\RemoteFreeExtensions\EvaluateExtension.php(27): Automattic\WooCommerce\Admin\RemoteInboxNotifications\RuleEvaluator->evaluate(Array)
+#5 C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\Features\RemoteFreeExtensions\Init.php(48): Automattic\WooCommerce\Admin\Features\RemoteFreeExtensions\EvaluateExtension::evaluate(Object(stdClass))
+#6 C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\API\OnboardingFreeExtensions.php(75): Automattic\WooCommerce\Admin\Features\RemoteFreeExtensions\Init::get_extensions()
+#7 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api\class-wp-rest-server.php(1140): Automattic\WooCommerce\Admin\API\OnboardingFreeExtensions->get_available_extensions(Object(WP_REST_Request))
+#8 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api\class-wp-rest-server.php(987): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wc-admin/onboa...', Array, NULL)
+#9 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api\class-wp-rest-server.php(414): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#10 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api.php(370): WP_REST_Server->serve_request('/wc-admin/onboa...')
+#11 C:\xampp\htdocs\AlaskaCo\wp-includes\class-wp-hook.php(303): rest_api_loaded(Object(WP))
+#12 C:\xampp\htdocs\AlaskaCo\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#13 C:\xampp\htdocs\AlaskaCo\wp-includes\plugin.php(518): WP_Hook->do_action(Array)
+#14 C:\xampp\htdocs\AlaskaCo\wp-includes\class-wp.php(388): do_action_ref_array('parse_request', Array)
+#15 C:\xampp\htdocs\AlaskaCo\wp-includes\class-wp.php(750): WP->parse_request('')
+#16 C:\xampp\htdocs\AlaskaCo\wp-includes\functions.php(1291): WP->main('')
+#17 C:\xampp\htdocs\AlaskaCo\wp-blog-header.php(16): wp()
+#18 C:\xampp\htdocs\AlaskaCo\index.php(17): require('C:\\xampp\\htdocs...')
+#19 {main}
+  thrown in C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\Transformers\ArrayColumn.php on line 27
+
+2021-10-15T11:03:53+00:00 CRITICAL Uncaught TypeError: array_column(): Argument #1 ($array) must be of type array, string given in C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\Transformers\ArrayColumn.php:27
+Stack trace:
+#0 C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\Transformers\ArrayColumn.php(27): array_column('', 'slug')
+#1 C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\TransformerService.php(59): Automattic\WooCommerce\Admin\RemoteInboxNotifications\Transformers\ArrayColumn->transform('', Object(stdClass), '')
+#2 C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\OptionRuleProcessor.php(45): Automattic\WooCommerce\Admin\RemoteInboxNotifications\TransformerService::apply('', Array, '')
+#3 C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\RuleEvaluator.php(62): Automattic\WooCommerce\Admin\RemoteInboxNotifications\OptionRuleProcessor->process(Object(stdClass), NULL)
+#4 C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\Features\RemoteFreeExtensions\EvaluateExtension.php(27): Automattic\WooCommerce\Admin\RemoteInboxNotifications\RuleEvaluator->evaluate(Array)
+#5 C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\Features\RemoteFreeExtensions\Init.php(48): Automattic\WooCommerce\Admin\Features\RemoteFreeExtensions\EvaluateExtension::evaluate(Object(stdClass))
+#6 C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\API\OnboardingFreeExtensions.php(75): Automattic\WooCommerce\Admin\Features\RemoteFreeExtensions\Init::get_extensions()
+#7 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api\class-wp-rest-server.php(1140): Automattic\WooCommerce\Admin\API\OnboardingFreeExtensions->get_available_extensions(Object(WP_REST_Request))
+#8 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api\class-wp-rest-server.php(987): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wc-admin/onboa...', Array, NULL)
+#9 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api\class-wp-rest-server.php(414): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#10 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api.php(370): WP_REST_Server->serve_request('/wc-admin/onboa...')
+#11 C:\xampp\htdocs\AlaskaCo\wp-includes\class-wp-hook.php(303): rest_api_loaded(Object(WP))
+#12 C:\xampp\htdocs\AlaskaCo\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#13 C:\xampp\htdocs\AlaskaCo\wp-includes\plugin.php(518): WP_Hook->do_action(Array)
+#14 C:\xampp\htdocs\AlaskaCo\wp-includes\class-wp.php(388): do_action_ref_array('parse_request', Array)
+#15 C:\xampp\htdocs\AlaskaCo\wp-includes\class-wp.php(750): WP->parse_request('')
+#16 C:\xampp\htdocs\AlaskaCo\wp-includes\functions.php(1291): WP->main('')
+#17 C:\xampp\htdocs\AlaskaCo\wp-blog-header.php(16): wp()
+#18 C:\xampp\htdocs\AlaskaCo\index.php(17): require('C:\\xampp\\htdocs...')
+#19 {main}
+  thrown in C:\xampp\htdocs\AlaskaCo\wp-content\plugins\woocommerce\packages\woocommerce-admin\src\RemoteInboxNotifications\Transformers\ArrayColumn.php on line 27
+
+2021-10-15T11:29:44+00:00 CRITICAL Uncaught Error: Call to a member function format() on null in C:\xampp\htdocs\AlaskaCo\wp-content\plugins\location-weather\includes\Frontend\Shortcode.php:138
+Stack trace:
+#0 C:\xampp\htdocs\AlaskaCo\wp-content\plugins\location-weather\includes\Frontend\Shortcode.php(100): ShapedPlugin\Weather\Frontend\Shortcode->current_weather_data(Object(ShapedPlugin\Weather\Frontend\WeatherData\CurrentWeather), '12', '1', 'mph', 'imperial', 'g:i a, F j, Y')
+#1 C:\xampp\htdocs\AlaskaCo\wp-includes\shortcodes.php(356): ShapedPlugin\Weather\Frontend\Shortcode->render_shortcode(Array, '', 'location-weathe...')
+#2 [internal function]: do_shortcode_tag(Array)
+#3 C:\xampp\htdocs\AlaskaCo\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(locati...', 'do_shortcode_ta...', '[location-weath...')
+#4 C:\xampp\htdocs\AlaskaCo\wp-includes\class-wp-hook.php(303): do_shortcode('[location-weath...')
+#5 C:\xampp\htdocs\AlaskaCo\wp-includes\plugin.php(189): WP_Hook->apply_filters('[location-weath...', Array)
+#6 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api\endpoints\class-wp-rest-revisions-controller.php(603): apply_filters('the_content', '<!-- wp:shortco...')
+#7 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api\endpoints\class-wp-rest-autosaves-controller.php(406): WP_REST_Revisions_Controller->prepare_item_for_response(Object(WP_Post), Object(WP_REST_Request))
+#8 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api\endpoints\class-wp-rest-autosaves-controller.php(239): WP_REST_Autosaves_Controller->prepare_item_for_response(Object(WP_Post), Object(WP_REST_Request))
+#9 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api\class-wp-rest-server.php(1140): WP_REST_Autosaves_Controller->create_item(Object(WP_REST_Request))
+#10 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api\class-wp-rest-server.php(987): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/pages/(?...', Array, NULL)
+#11 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api\class-wp-rest-server.php(414): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#12 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api.php(370): WP_REST_Server->serve_request('/wp/v2/pages/21...')
+#13 C:\xampp\htdocs\AlaskaCo\wp-includes\class-wp-hook.php(303): rest_api_loaded(Object(WP))
+#14 C:\xampp\htdocs\AlaskaCo\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#15 C:\xampp\htdocs\AlaskaCo\wp-includes\plugin.php(518): WP_Hook->do_action(Array)
+#16 C:\xampp\htdocs\AlaskaCo\wp-includes\class-wp.php(388): do_action_ref_array('parse_request', Array)
+#17 C:\xampp\htdocs\AlaskaCo\wp-includes\class-wp.php(750): WP->parse_request('')
+#18 C:\xampp\htdocs\AlaskaCo\wp-includes\functions.php(1291): WP->main('')
+#19 C:\xampp\htdocs\AlaskaCo\wp-blog-header.php(16): wp()
+#20 C:\xampp\htdocs\AlaskaCo\index.php(17): require('C:\\xampp\\htdocs...')
+#21 {main}
+  thrown in C:\xampp\htdocs\AlaskaCo\wp-content\plugins\location-weather\includes\Frontend\Shortcode.php on line 138
+
+2021-10-15T11:30:44+00:00 CRITICAL Uncaught Error: Call to a member function format() on null in C:\xampp\htdocs\AlaskaCo\wp-content\plugins\location-weather\includes\Frontend\Shortcode.php:138
+Stack trace:
+#0 C:\xampp\htdocs\AlaskaCo\wp-content\plugins\location-weather\includes\Frontend\Shortcode.php(100): ShapedPlugin\Weather\Frontend\Shortcode->current_weather_data(Object(ShapedPlugin\Weather\Frontend\WeatherData\CurrentWeather), '12', '1', 'mph', 'imperial', 'g:i a, F j, Y')
+#1 C:\xampp\htdocs\AlaskaCo\wp-includes\shortcodes.php(356): ShapedPlugin\Weather\Frontend\Shortcode->render_shortcode(Array, '', 'location-weathe...')
+#2 [internal function]: do_shortcode_tag(Array)
+#3 C:\xampp\htdocs\AlaskaCo\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(locati...', 'do_shortcode_ta...', '[location-weath...')
+#4 C:\xampp\htdocs\AlaskaCo\wp-includes\class-wp-hook.php(303): do_shortcode('[location-weath...')
+#5 C:\xampp\htdocs\AlaskaCo\wp-includes\plugin.php(189): WP_Hook->apply_filters('[location-weath...', Array)
+#6 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api\endpoints\class-wp-rest-revisions-controller.php(603): apply_filters('the_content', '<!-- wp:shortco...')
+#7 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api\endpoints\class-wp-rest-autosaves-controller.php(406): WP_REST_Revisions_Controller->prepare_item_for_response(Object(WP_Post), Object(WP_REST_Request))
+#8 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api\endpoints\class-wp-rest-autosaves-controller.php(239): WP_REST_Autosaves_Controller->prepare_item_for_response(Object(WP_Post), Object(WP_REST_Request))
+#9 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api\class-wp-rest-server.php(1140): WP_REST_Autosaves_Controller->create_item(Object(WP_REST_Request))
+#10 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api\class-wp-rest-server.php(987): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/pages/(?...', Array, NULL)
+#11 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api\class-wp-rest-server.php(414): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#12 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api.php(370): WP_REST_Server->serve_request('/wp/v2/pages/21...')
+#13 C:\xampp\htdocs\AlaskaCo\wp-includes\class-wp-hook.php(303): rest_api_loaded(Object(WP))
+#14 C:\xampp\htdocs\AlaskaCo\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#15 C:\xampp\htdocs\AlaskaCo\wp-includes\plugin.php(518): WP_Hook->do_action(Array)
+#16 C:\xampp\htdocs\AlaskaCo\wp-includes\class-wp.php(388): do_action_ref_array('parse_request', Array)
+#17 C:\xampp\htdocs\AlaskaCo\wp-includes\class-wp.php(750): WP->parse_request('')
+#18 C:\xampp\htdocs\AlaskaCo\wp-includes\functions.php(1291): WP->main('')
+#19 C:\xampp\htdocs\AlaskaCo\wp-blog-header.php(16): wp()
+#20 C:\xampp\htdocs\AlaskaCo\index.php(17): require('C:\\xampp\\htdocs...')
+#21 {main}
+  thrown in C:\xampp\htdocs\AlaskaCo\wp-content\plugins\location-weather\includes\Frontend\Shortcode.php on line 138
+
+2021-10-15T11:33:21+00:00 CRITICAL Uncaught Error: Call to a member function format() on null in C:\xampp\htdocs\AlaskaCo\wp-content\plugins\location-weather\includes\Frontend\Shortcode.php:138
+Stack trace:
+#0 C:\xampp\htdocs\AlaskaCo\wp-content\plugins\location-weather\includes\Frontend\Shortcode.php(100): ShapedPlugin\Weather\Frontend\Shortcode->current_weather_data(Object(ShapedPlugin\Weather\Frontend\WeatherData\CurrentWeather), '12', '1', 'mph', 'imperial', 'g:i a, F j, Y')
+#1 C:\xampp\htdocs\AlaskaCo\wp-includes\shortcodes.php(356): ShapedPlugin\Weather\Frontend\Shortcode->render_shortcode(Array, '', 'location-weathe...')
+#2 [internal function]: do_shortcode_tag(Array)
+#3 C:\xampp\htdocs\AlaskaCo\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(locati...', 'do_shortcode_ta...', '[location-weath...')
+#4 C:\xampp\htdocs\AlaskaCo\wp-includes\class-wp-hook.php(303): do_shortcode('[location-weath...')
+#5 C:\xampp\htdocs\AlaskaCo\wp-includes\plugin.php(189): WP_Hook->apply_filters('[location-weath...', Array)
+#6 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api\endpoints\class-wp-rest-posts-controller.php(1792): apply_filters('the_content', '<!-- wp:shortco...')
+#7 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api\endpoints\class-wp-rest-posts-controller.php(550): WP_REST_Posts_Controller->prepare_item_for_response(Object(WP_Post), Object(WP_REST_Request))
+#8 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api\class-wp-rest-server.php(1140): WP_REST_Posts_Controller->get_item(Object(WP_REST_Request))
+#9 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api\class-wp-rest-server.php(987): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/pages/(?...', Array, NULL)
+#10 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api\class-wp-rest-server.php(414): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#11 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api.php(370): WP_REST_Server->serve_request('/wp/v2/pages/21...')
+#12 C:\xampp\htdocs\AlaskaCo\wp-includes\class-wp-hook.php(303): rest_api_loaded(Object(WP))
+#13 C:\xampp\htdocs\AlaskaCo\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#14 C:\xampp\htdocs\AlaskaCo\wp-includes\plugin.php(518): WP_Hook->do_action(Array)
+#15 C:\xampp\htdocs\AlaskaCo\wp-includes\class-wp.php(388): do_action_ref_array('parse_request', Array)
+#16 C:\xampp\htdocs\AlaskaCo\wp-includes\class-wp.php(750): WP->parse_request('')
+#17 C:\xampp\htdocs\AlaskaCo\wp-includes\functions.php(1291): WP->main('')
+#18 C:\xampp\htdocs\AlaskaCo\wp-blog-header.php(16): wp()
+#19 C:\xampp\htdocs\AlaskaCo\index.php(17): require('C:\\xampp\\htdocs...')
+#20 {main}
+  thrown in C:\xampp\htdocs\AlaskaCo\wp-content\plugins\location-weather\includes\Frontend\Shortcode.php on line 138
+
+2021-10-15T11:35:41+00:00 CRITICAL Uncaught Error: Call to a member function format() on null in C:\xampp\htdocs\AlaskaCo\wp-content\plugins\location-weather\includes\Frontend\Shortcode.php:138
+Stack trace:
+#0 C:\xampp\htdocs\AlaskaCo\wp-content\plugins\location-weather\includes\Frontend\Shortcode.php(100): ShapedPlugin\Weather\Frontend\Shortcode->current_weather_data(Object(ShapedPlugin\Weather\Frontend\WeatherData\CurrentWeather), '12', '1', 'mph', 'imperial', 'g:i a, F j, Y')
+#1 C:\xampp\htdocs\AlaskaCo\wp-includes\shortcodes.php(356): ShapedPlugin\Weather\Frontend\Shortcode->render_shortcode(Array, '', 'location-weathe...')
+#2 [internal function]: do_shortcode_tag(Array)
+#3 C:\xampp\htdocs\AlaskaCo\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(locati...', 'do_shortcode_ta...', '[location-weath...')
+#4 C:\xampp\htdocs\AlaskaCo\wp-includes\class-wp-hook.php(303): do_shortcode('[location-weath...')
+#5 C:\xampp\htdocs\AlaskaCo\wp-includes\plugin.php(189): WP_Hook->apply_filters('[location-weath...', Array)
+#6 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api\endpoints\class-wp-rest-posts-controller.php(1792): apply_filters('the_content', '<!-- wp:shortco...')
+#7 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api\endpoints\class-wp-rest-posts-controller.php(550): WP_REST_Posts_Controller->prepare_item_for_response(Object(WP_Post), Object(WP_REST_Request))
+#8 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api\class-wp-rest-server.php(1140): WP_REST_Posts_Controller->get_item(Object(WP_REST_Request))
+#9 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api\class-wp-rest-server.php(987): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/pages/(?...', Array, NULL)
+#10 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api\class-wp-rest-server.php(414): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#11 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api.php(370): WP_REST_Server->serve_request('/wp/v2/pages/21...')
+#12 C:\xampp\htdocs\AlaskaCo\wp-includes\class-wp-hook.php(303): rest_api_loaded(Object(WP))
+#13 C:\xampp\htdocs\AlaskaCo\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#14 C:\xampp\htdocs\AlaskaCo\wp-includes\plugin.php(518): WP_Hook->do_action(Array)
+#15 C:\xampp\htdocs\AlaskaCo\wp-includes\class-wp.php(388): do_action_ref_array('parse_request', Array)
+#16 C:\xampp\htdocs\AlaskaCo\wp-includes\class-wp.php(750): WP->parse_request('')
+#17 C:\xampp\htdocs\AlaskaCo\wp-includes\functions.php(1291): WP->main('')
+#18 C:\xampp\htdocs\AlaskaCo\wp-blog-header.php(16): wp()
+#19 C:\xampp\htdocs\AlaskaCo\index.php(17): require('C:\\xampp\\htdocs...')
+#20 {main}
+  thrown in C:\xampp\htdocs\AlaskaCo\wp-content\plugins\location-weather\includes\Frontend\Shortcode.php on line 138
+
+2021-10-15T11:36:41+00:00 CRITICAL Uncaught Error: Call to a member function format() on null in C:\xampp\htdocs\AlaskaCo\wp-content\plugins\location-weather\includes\Frontend\Shortcode.php:138
+Stack trace:
+#0 C:\xampp\htdocs\AlaskaCo\wp-content\plugins\location-weather\includes\Frontend\Shortcode.php(100): ShapedPlugin\Weather\Frontend\Shortcode->current_weather_data(Object(ShapedPlugin\Weather\Frontend\WeatherData\CurrentWeather), '12', '1', 'mph', 'imperial', 'g:i a, F j, Y')
+#1 C:\xampp\htdocs\AlaskaCo\wp-includes\shortcodes.php(356): ShapedPlugin\Weather\Frontend\Shortcode->render_shortcode(Array, '', 'location-weathe...')
+#2 [internal function]: do_shortcode_tag(Array)
+#3 C:\xampp\htdocs\AlaskaCo\wp-includes\shortcodes.php(228): preg_replace_callback('/\\[(\\[?)(locati...', 'do_shortcode_ta...', '[location-weath...')
+#4 C:\xampp\htdocs\AlaskaCo\wp-includes\class-wp-hook.php(303): do_shortcode('[location-weath...')
+#5 C:\xampp\htdocs\AlaskaCo\wp-includes\plugin.php(189): WP_Hook->apply_filters('[location-weath...', Array)
+#6 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api\endpoints\class-wp-rest-revisions-controller.php(603): apply_filters('the_content', '<!-- wp:shortco...')
+#7 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api\endpoints\class-wp-rest-autosaves-controller.php(406): WP_REST_Revisions_Controller->prepare_item_for_response(Object(WP_Post), Object(WP_REST_Request))
+#8 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api\endpoints\class-wp-rest-autosaves-controller.php(239): WP_REST_Autosaves_Controller->prepare_item_for_response(Object(WP_Post), Object(WP_REST_Request))
+#9 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api\class-wp-rest-server.php(1140): WP_REST_Autosaves_Controller->create_item(Object(WP_REST_Request))
+#10 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api\class-wp-rest-server.php(987): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wp/v2/pages/(?...', Array, NULL)
+#11 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api\class-wp-rest-server.php(414): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#12 C:\xampp\htdocs\AlaskaCo\wp-includes\rest-api.php(370): WP_REST_Server->serve_request('/wp/v2/pages/21...')
+#13 C:\xampp\htdocs\AlaskaCo\wp-includes\class-wp-hook.php(303): rest_api_loaded(Object(WP))
+#14 C:\xampp\htdocs\AlaskaCo\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#15 C:\xampp\htdocs\AlaskaCo\wp-includes\plugin.php(518): WP_Hook->do_action(Array)
+#16 C:\xampp\htdocs\AlaskaCo\wp-includes\class-wp.php(388): do_action_ref_array('parse_request', Array)
+#17 C:\xampp\htdocs\AlaskaCo\wp-includes\class-wp.php(750): WP->parse_request('')
+#18 C:\xampp\htdocs\AlaskaCo\wp-includes\functions.php(1291): WP->main('')
+#19 C:\xampp\htdocs\AlaskaCo\wp-blog-header.php(16): wp()
+#20 C:\xampp\htdocs\AlaskaCo\index.php(17): require('C:\\xampp\\htdocs...')
+#21 {main}
+  thrown in C:\xampp\htdocs\AlaskaCo\wp-content\plugins\location-weather\includes\Frontend\Shortcode.php on line 138
+
